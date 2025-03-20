@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Foto Kolase</title>
+  <meta name="description" content="Beautiful Photo Collage Gallery" />
+  <meta name="author" content="Lovable" />
+  <meta property="og:image" content="/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Cover section with changing text -->
+    <section class="cover-section reveal">
+      <div class="cover-image">
+        <div class="text-overlay">
+          <h2 id="changing-text">Keindahan Momen Dalam Gambar</h2>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <h1>Galeri Foto 13boys_RPL</h1>
+      <p>Kumpulan foto-foto yang indah dan menakjubkan</p>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container reveal">
+      <input type="text" id="search-input" placeholder="Cari nama panggilan">
+      <button id="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <!-- Horizontal scrolling gallery (limited to 10 photos) -->
+    <section class="horizontal-gallery-container">
+      <h2 class="section-title">Foto Pilihan</h2>
+      <div class="horizontal-gallery">
+        <!-- 10 Photos in horizontal gallery -->
+        <div class="horizontal-photo-card reveal">
+          <img src="img2/RPL A/1.ADITYA ANANDA LEON SAPUTRA.JPG" alt="Foto nature 1" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">1.ADITYA ANANDA LEON SAPUTRA</div>
+          </div>
+          <div class="floor-text">L eon - Gambar nature yang menakjubkan #1</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img2/RPL A/5.ANDRA RIZKI PURNAMA.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">2.ANDRA RIZKI PURNAMA</div>
+          </div>
+          <div class="floor-text">Rizki - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img2/RPL A/9.BIMA SETIA SAKTI.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">3.BIMA SETIA SAKTI</div>
+          </div>
+          <div class="floor-text">bima - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img2/RPL A/28.JASSON FALENTINO WIDI HARTONO.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">4.JASSON FALENTINO WIDI HARTONO</div>
+          </div>
+          <div class="floor-text">jasson - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/1.MOCH. KHUSNUL RASYA PRATAMA.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">5.MOCH. KHUSNUL RASYA PRATAMA</div>
+          </div>
+          <div class="floor-text">rasya - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/2.MOCH. RADIT RYANSYAH.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">6.MOCH. RADIT RYANSYAH</div>
+          </div>
+          <div class="floor-text">radit - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/3.MUHAMAT VIKI YUSNIKA.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">7.MUHAMAT VIKI YUSNIKA</div>
+          </div>
+          <div class="floor-text">viki - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/4.MUHAMMAD MAHESA ANGGARESTU.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">8.MUHAMMAD MAHESA ANGGARESTU</div>
+          </div>
+          <div class="floor-text">angga - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/5.MUHAMMAD MIFTAH.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">9.MUHAMMAD MIFTAH</div>
+          </div>
+          <div class="floor-text">mifta - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/9.NICOLAS GADING SAPUTRA.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">10.NICOLAS GADING SAPUTRA</div>
+          </div>
+          <div class="floor-text">niko - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/11.NIZAR ALI MAULIDIN.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">11.NIZAR ALI MAULIDIN</div>
+          </div>
+          <div class="floor-text">nizar - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/17.RIO PUTRA PRASETYONO.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">12.RIO PUTRA PRASETYONO</div>
+          </div>
+          <div class="floor-text">rio - Gambar city yang menakjubkan #2</div>
+        </div>
+        <div class="horizontal-photo-card reveal">
+          <img src="img1/RPL B/20.ROCHMAD DWI CHANDRA DINATA.JPG" alt="Foto city 2" loading="lazy">
+          <div class="overlay">
+            <div class="title"></div>
+            <div class="description">13.ROCHMAD DWI CHANDRA DINATA</div>
+          </div>
+          <div class="floor-text">chandra - Gambar city yang menakjubkan #2</div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+    <main class="photo-gallery">
+      <div class="photo-card landscape reveal">
+        <img src="KI2.jpeg" alt="Pemandangan Alam" loading="lazy">
+        <div class="overlay">
+          <div class="title">anomali</div>
+          <div class="description">melihat sosok anoimali</div>
+        </div>
+      </div>
+      <!-- Photo gallery with cards directly in HTML -->
+      <div class="photo-card landscape reveal">
+        <img src="ML.jpeg" alt="Pemandangan Alam" loading="lazy">
+        <div class="overlay">
+          <div class="title">tournament moba</div>
+          <div class="description">kita berlomba untuk membukatikan dan ternyata kalah</div>
+        </div>
+      </div>
+      <div class="photo-card portrait reveal">
+        <img src="BEDU2.jpeg" alt="Potret Orang" loading="lazy">
+        <div class="overlay">
+          <div class="title">bali</div>
+          <div class="description">keindahan yang asri </div>
+        </div>
+      </div>
+      <div class="photo-card featured reveal">
+        <img src="BEDU.jpeg" alt="Arsitektur Modern" loading="lazy">
+        <div class="overlay">
+          <div class="title">bali</div>
+          <div class="description">menikmati udara sejuk </div>
+        </div>
+      </div>
+      <div class="photo-card landscape reveal">
+        <img src="PANTAI2.jpeg" alt="Pantai" loading="lazy">
+        <div class="overlay">
+          <div class="title">Pantai </div>
+          <div class="description">Pantai indah dengan pasir putih</div>
+        </div>
+      </div>
+      <div class="photo-card portrait reveal">
+        <img src="PANTAI.jpeg" alt="Hewan Liar" loading="lazy">
+        <div class="overlay">
+          <div class="title">pantai </div>
+          <div class="description">kenangan di pantai bali bersama teman"</div>
+        </div>
+      </div>
+
+      <div class="photo-card featured reveal">
+        <img src="KI.jpeg" alt="Kota di Malam Hari" loading="lazy">
+        <div class="overlay">
+          <div class="title">kunjungan industri</div>
+          <div class="description">Yakult adalah produk minuman susu fermentasi yang mengandung probiotik (bakteri baik)
+            yang bermanfaat untuk menjaga keseimbangan mikroorganisme di saluran pencernaan</div>
+        </div>
+      </div>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img class="lightbox-img" id="lightbox-img">
+      <div class="caption" id="caption"></div>
+    </div>
+
+    <!-- Login modal -->
+    <div id="login-modal" class="login-modal">
+      <div class="login-container">
+        <span class="close-login">&times;</span>
+        <h2>masukkan nama untuk melanjutkan</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Comment section modal -->
+    <div id="comment-section" class="comment-section">
+      <div class="comment-container">
+        <span class="close-btn" id="close-comment">&times;</span>
+        <h2>Komentar</h2>
+
+        <div class="comment-form-container">
+          <p>Posting sebagai: <span id="comment-username">Guest</span></p>
+          <form id="comment-form">
+            <div class="form-group">
+              <textarea id="comment-text" placeholder="Tulis komentar Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="comment-btn">Kirim Komentar</button>
+          </form>
+        </div>
+
+        <div class="comments-list" id="comment-list">
+          <!-- Comments will be added here dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom fixed navigation bar -->
+    <nav class="bottom-nav">
+      <div class="nav-item">
+        <button id="comment-btn" class="nav-button">
+          <i class="fas fa-comment"></i>
+          <span>Comment</span>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button id="like-btn" class="nav-button">
+          <i class="fas fa-heart"></i>
+          <span>Like</span>
+        </button>
+      </div>
+      <div class="nav-item">
+        <a href="https://www.instagram.com/13boys_rpl?igsh=cGIxanM4dXZjdGd0" target="_blank" class="nav-link">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="https://www.youtube.com/@software.journeyyy" target="_blank" class="nav-link">
+          <i class="fab fa-youtube"></i>
+          <span>Youtube</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+
+</html>

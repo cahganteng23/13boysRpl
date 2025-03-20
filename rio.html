@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    h1,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sticky Navbar */
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .sticky-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sticky-nav ul li {
+      margin: 0 20px;
+    }
+
+    .sticky-nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Halaman 1: Cover dengan teks */
+    header .cover-container {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    header .cover-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    header .cover-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 36px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      width: 80%;
+      line-height: 1.5;
+    }
+
+    header .cover-text[contenteditable="true"]:empty:before {
+      content: "Teks yang bisa diubah";
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Halaman 2: Card Hover */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Halaman 3: Kolase Foto */
+    .collage-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .collage-container img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .card-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .collage-container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cover-text {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cover-text {
+        font-size: 18px;
+      }
+
+      .card-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Halaman 1: Cover dan Teks -->
+  <div id="page1">
+    <header>
+      <div class="cover-container">
+        <img src="https://via.placeholder.com/1200x500" alt="Cover Image">
+        <div class="cover-text" contenteditable="true">Teks yang bisa diubah</div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Halaman 2: 36 Foto Card -->
+  <div id="page2">
+    <header>
+      <h1 style="text-align:center; margin-top: 60px;">36 Foto Card</h1>
+    </header>
+
+    <div class="card-container">
+      <!-- Contoh Card (Anda bisa menambah lebih banyak) -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300" alt="Card 1">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300" alt="Card 2">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300" alt="Card 3">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300" alt="Card 4">
+      </div>
+      <!-- Repeat as needed to reach 36 cards -->
+    </div>
+  </div>
+
+  <!-- Halaman 3: Kolase Foto -->
+  <div id="page3">
+    <header>
+      <h1 style="text-align:center;">Kolase Foto</h1>
+    </header>
+
+    <div class="collage-container">
+      <img src="https://via.placeholder.com/400x300" alt="Collage 1">
+      <img src="https://via.placeholder.com/400x300" alt="Collage 2">
+      <img src="https://via.placeholder.com/400x300" alt="Collage 3">
+      <img src="https://via.placeholder.com/400x300" alt="Collage 4">
+      <img src="https://via.placeholder.com/400x300" alt="Collage 5">
+      <img src="https://via.placeholder.com/400x300" alt="Collage 6">
+    </div>
+
+    <footer>
+      <p>© 2025 Your Website</p>
+    </footer>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="sticky-nav">
+    <ul>
+      <li><a href="#page1">Home</a></li>
+      <li><a href="#page2">Page 2</a></li>
+      <li><a href="#page3">Page 3</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    // Script untuk smooth scrolling
+    const links = document.querySelectorAll('.sticky-nav a');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop - document.querySelector('.sticky-nav').offsetHeight,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
